@@ -1,0 +1,32 @@
+from urllib2 import urlopen
+from bs4 import BeautifulSoup
+
+html = raw_input('Ingresa la web:  ')
+soup = BeautifulSoup(urlopen(html),"html.parser")
+
+letters = soup.find_all("td")
+
+print str(letters[0].get_text())
+print letters[1].get_text()
+print str(letters[2].get_text())
+print str(letters[3].get_text())
+print str(letters[4].get_text())
+print str(letters[5].get_text())
+print str(letters[6].get_text())
+print str(letters[7].get_text())
+print str(letters[8].get_text())
+print str(letters[9].get_text())
+print str(letters[10].get_text())
+print str(letters[11].get_text())
+print str(letters[12].get_text())
+print str(letters[13].get_text())
+print str(letters[14].get_text())
+print str(letters[15].get_text())
+print str(letters[16].get_text())
+print str(letters[17].get_text())
+print str(letters[18].get_text())
+print str(letters[19].get_text())
+print str(letters[20].get_text())
+print letters[21].get_text()
+print str(letters[22].get_text())
+print letters[23].get_text()
